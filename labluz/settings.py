@@ -70,7 +70,7 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'UTC'
 
@@ -110,3 +110,7 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 EMAIL_SUBJECT_PREFIX = '[Labluz]'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+TEMPLATE_DIRS = (
+    BASE_DIR.child('templates'),
+)
